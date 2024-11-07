@@ -1,0 +1,59 @@
+/* Estilo para la página principal */
+.navbar-stikcy {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.div-leaf {
+  padding: 1cm 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* background-image: url("https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?cs=srgb&dl=pexels-muhammad-khairul-iddin-adnan-267454-808510.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-image: linear-gradient(
+    100deg,
+    rgb(161, 212, 161),
+    white,
+    rgb(161, 212, 161)
+  ); */
+  overflow: hidden;
+}
+
+#div-leaf-home {
+  max-width: 80%;
+}
+
+.homepage-title {
+  text-align: center;
+  font-family: var(--font5);
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(55, 159, 162);
+  margin-bottom: 1cm;
+}
+
+.homepage-p {
+  margin-bottom: 1cm;
+  font-family: var(--font1);
+  line-height: 2cm;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.carousel-container {
+  width: 80%;
+}
+
+.navbar,
+.footer {
+  width: 100%;
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 1rem;
+}

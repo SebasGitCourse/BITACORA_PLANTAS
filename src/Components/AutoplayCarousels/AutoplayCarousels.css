@@ -1,0 +1,84 @@
+/* NUEVO */
+
+.div-itemsPlantas {
+  width: 100%;
+}
+
+.imgPlanta {
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(1);
+}
+
+#imgPlanta1:hover {
+  transition: box-shadow 0.5s ease;
+  box-shadow: 0 0 15px black;
+}
+
+/* MOVIL */
+@media (max-width: 767px) {
+  .div-itemsPlantas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .itemPlanta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgPlanta {
+    width: 70%;
+  }
+
+  #imgPlanta1 {
+    width: 90%;
+    filter: saturate(2);
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .div-itemsPlantas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .imgPlanta {
+    max-width: 100%;
+  }
+
+  .itemPlanta2 {
+    grid-column: 1 / -1;
+  }
+
+  #imgPlanta2 {
+    filter: saturate(2);
+  }
+}
+
+/* PC */
+
+@media (min-width: 1200px) {
+  .div-itemsPlantas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1cm;
+  }
+
+  .imgPlanta {
+    width: 350px;
+  }
+
+  #imgPlanta1 {
+    width: 450px;
+    filter: saturate(2);
+  }
+}
